@@ -51,7 +51,7 @@ public class Main {
         System.out.println("Ingrese el numero de la fila que quiere: ");
         int f = sc.nextInt();
         for (int i = 0; i < matriz.length; i++) {
-            System.out.print(matriz[0][i] + " ");
+            System.out.print(matriz[f][i] + " ");
 
             }
 
