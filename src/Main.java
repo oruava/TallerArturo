@@ -1,6 +1,4 @@
-import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.List;
 import java.util.Random;
 
 public class Main {
@@ -33,14 +31,21 @@ public class Main {
                 Random rand = new Random();
                 int indice = rand.nextInt(0, 10);
                 matriz[i][j] = indice;
-
-        for (int x = 0; x < matriz.length; x++) {
-            System.out.print(matriz[x][j]+ " ");
         }
             }
+
+
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                System.out.print(matriz[i][j]+ " ");
+            }
+            System.out.println();
         }
+
         return matriz;
     }
+
+
 }
 
 
