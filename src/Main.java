@@ -13,7 +13,7 @@ public class Main {
         System.out.println(n);
 
         System.out.println(ValidarFilasYColumnas(m, n)); //Validacion
-        System.out.println(HacerMatriz(m,n)); //Hacer matriz
+        MostrarFilas(HacerMatriz(m,n));
     }
 
     public static boolean ValidarFilasYColumnas(int m, int n) {
@@ -46,8 +46,18 @@ public class Main {
     }
 
 
-}
+    public static void MostrarFilas(int[][]matriz) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese el numero de la fila que quiere: ");
+        int f = sc.nextInt();
+        for (int i = 0; i < matriz.length; i++) {
+            System.out.print(matriz[0][i] + " ");
 
+            }
+
+
+        }
+    }
 
 
 
