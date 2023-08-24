@@ -26,7 +26,7 @@ public class Main {
         }
     }
 
-    public static void HacerMatriz(String[] args, int m, int n) {
+    public static int[][] HacerMatriz(int m, int n) {
         int[][] matriz = new int[m][n];
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
@@ -36,10 +36,10 @@ public class Main {
 
         for (int x = 0; x < matriz.length; x++) {
             System.out.print(matriz[x][j]+ " ");
-                    }
-        System.out.println();
+        }
             }
         }
+        return matriz;
     }
 }
 
